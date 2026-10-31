@@ -1,0 +1,38 @@
+[project]
+name = "trip"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Superuj1986", email = "dotuanlong2209@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "airportsdata>=20260905",
+    "fastapi>=0.162.0",
+    "jinja2>=3.1.6",
+    "httpx>=0.27.0",
+    "langchain>=1.4.7",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.4.0",
+    "langchain-mcp-adapters>=0.3.2",
+    "mcp>=1.30.0",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.18",
+    "langgraph-checkpoint-postgres>=3.2.0",
+    "psycopg-binary>=3.3.6",
+    "psycopg-pool>=3.3.3",
+    "pycountry>=26.2.16",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "tavily-python>=0.8.5",
+    "uvicorn>=0.54.0",
+    "langchain-groq>=1.1.3",
+]
+
+[project.scripts]
+trip = "trip:main"
+
+[build-system]
+requires = ["uv_build>=0.13.4,<0.14.0"]
+build-backend = "uv_build"
